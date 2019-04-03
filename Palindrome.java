@@ -3,13 +3,13 @@ import java.util.Arrays;
 import java.util.List;
 public class Palindrome {
     public static boolean isPalindrome(String word) {
-        List<Object> array = new ArrayList();
-		char[] woe = word.toCharArray();
-    	for(int i = woe.length-1; i>=0; i--) {
-    		array.add(woe[i]);
+        List<Object> newWord = new ArrayList();
+		char[] wordToChar = word.toCharArray();
+    	for(int i = wordToChar.length-1; i>=0; i--) {
+    		newWord.add(wordToChar[i]);
     	}
-    	String arrays = array.toString();
-    	String words = listToString(array);
+    	String arrays = newWord.toString();
+    	String words = listToString(newWord);
     	if(word.toLowerCase().equals(words.toLowerCase())) {
         	return true;
         	}else {
